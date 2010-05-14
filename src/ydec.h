@@ -1,9 +1,8 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include "pcre.h"
-#include "crc/crc.h"
+#include <stdio.h>		/* for file io 			*/
+#include <string.h>		/* for strncpy etc. 		*/
+#include <stdlib.h>		/* for malloc, free etc. 	*/
+#include <pcre.h>		/* for regular expressions 	*/
+#include "crc/crc.h"		/* for crc 32 checksum 		*/
 
 #define CR		0x0d
 #define LF		0x0a
