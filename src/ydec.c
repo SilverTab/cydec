@@ -41,8 +41,8 @@ char *execute_regex(char *pattern, char *subject, int desired_match)
 size_t get_file_size(char *haystack)
 {
 
-	size_t result		= 0;
-	int scanned			= 0;
+	size_t result = 0;
+	int scanned	= 0;
 	char *match;
 	
 	match = execute_regex("size=(\\d+)", haystack, 1);
@@ -72,9 +72,9 @@ int parse_file(char *path, char **data_head, char **data_tail, char **data, int 
 	int eoffset;
 	int stringcount = 0;
 	int ovector[30];
-	const char *head	= NULL;
-	const char *tail	= NULL;
-	const char *fdata	= NULL;
+	const char *head = NULL;
+	const char *tail = NULL;
+	const char *fdata = NULL;
 	int head_size, tail_size;
 	int datastart, dataend, datalength;
 	
@@ -147,8 +147,8 @@ int decode(char *data, size_t datasize, char *output_data, int *output_data_leng
 {
 
 	char decoded[datasize];
-	int decoded_bytes	= 0;
-	int escape			= 0;
+	int decoded_bytes = 0;
+	int escape = 0;
 	Byte byte;
   	int i;
 	
